@@ -1,100 +1,4 @@
-.body-header {
-    background-color: #EAC926;
-    margin: 0px;
-    font-family: var(--roboto);
-    font-size: var(--cuerposDeTexto);
-    height: 304px;
-}
 
-
-
-.body-header img {
-    width: 30%;
-    margin: 10px 5px 5px 25px;
-}
-
-
-.body-header form{margin: 10px 0px 10px 60px;display: block;}
-
-.body-header form input {display: block;color: black;width: 163px;}
-
-.body-header .lupa{
-
-display: inline;
-
-border: solid 1px black;
-
-background: white;
-
-padding: 2px;
-
-border-radius: 2px;
-}
-
- .body-header .H4 {
-
-margin-left: 0px;
-
-text-align: center;
-}
-
-
-
-.body-header .H4 i {
-
-
-}
-
-
-.body-header .NAVPRINCIPAL {color: black;margin: 0px 0px 0px 0px;width: 150px;height: 70px;}
-
-.body-header .NAVPRINCIPAL ul {
-    padding-left: 0%;
-}
-
-.body-header .NAVPRINCIPAL ul li {
-    padding-left: 0%;
-
-}
-
-.body-header .NAVPRINCIPAL ul li a {
-    padding-left: 0%;
-
-}
-
-.body-header .NAVSECUNDARIO {
-    padding-left: 0%;
-
-}
-
-.body-header .NAVSECUNDARIO ul {
-    padding-left: 0%;
-
-}
-
-
-
-.body-header .burger-menu {
-
-    background-color: var(--celeste);
-
-text-align: center;
-
-width: 35px;
-
-height: 35px;
-
-margin-left: 50%;
-
-border-radius: 3px;
-}
-
-.body-header .burger-menu i {
-
-color: #ebebeb;
-
-padding: 10px 0px 0px 0px;
-}
 
 /*Celular*/
 @media screen and (max-width: 360px) {
@@ -109,9 +13,12 @@ padding: 10px 0px 0px 0px;
     }
     
     .body-header .componentes{
-display: flex;
-flex-wrap: wrap;
-}
+
+display: flex;
+
+flex-wrap: wrap;
+
+}
 
     .body-header .componentes img {
         width: 50%;
@@ -119,7 +26,7 @@ padding: 10px 0px 0px 0px;
     }
     
     
-    .body-header .componentes form{/* margin: 10px 0px 10px 15px; */width: 50%;/* display: block; */}
+    .body-header .componentes form{ /* margin: 10px 0px 10px 15px; */width: 50%;/* display: block; */}
     
     .body-header form input {
     

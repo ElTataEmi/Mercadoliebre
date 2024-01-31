@@ -31,92 +31,116 @@
 
             <h4 class="H4"><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de credito</h4>
 
-
-
-
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" value="" id="nombre">
-            </div>
-
-            <div>
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" value="" id="apellido">
-            </div>
-
-            <div>
-                <label for="usuario">Nombre de Usuario</label>
-                <input type="text" name="usuario" value="" id="usuario">
-            </div>
-
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" value="" id="email">
-            </div>
-
-            <div>
-                <label for="fechaNac">Fecha de nacimiento</label>
-                <input type="date" name="fechaNac" value="" id="fechaNac">
-            </div>
-
-            <div>
-                <label>Domicilio</label>
-                <input type="text" name="calle" value="">
-                <input type="number" name="numero" value="">
-            </div>
-
-            <div>
-                <label for="telefono">Teléfono</label>
-                <input type="tel" name="telefono" value="" id="telefono">
-            </div>
-
-            -----------------------------------------
-
-            <div>
-                <label for="telefono">Teléfono</label>
-                <input type="tel" name="telefono" value="" id="telefono">
-            </div>
-
-            <div>
-                <label for="telefono">Teléfono</label>
-                <input type="tel" name="telefono" value="" id="telefono">
-            </div>
-
-            <div>
-                <label for="telefono">Teléfono</label>
-                <input type="tel" name="telefono" value="" id="telefono">
-            </div>
-
-            <div>
-                <label for="telefono">Teléfono</label>
-                <input type="tel" name="telefono" value="" id="telefono">
-            </div>
-
-        
-
-
-
-            ■ Perfil del usuario (consultar a l@s usuari@s si quieren comprar o vender)
-            ■ Categorías de interés (puede elegir más de una)
-            ● Electro
-            ● Moda
-            ● Hogar
-            ● Juguetería
-            ● Vida sana
-            ■ Foto de usuario
-            ■ Contraseña
-            ■ Confirmar contraseña
-            ■ Botón de enviar que nos lleve a la página principal
-            ■ Botón de borrar todos los datos del formulario
-
         </div>
+
+        <nav class="NAVPRINCIPAL">
+            <ul type="none">
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+
+        </nav>
+
+        <nav class="NAVSECUNDARIO">
+            <ul type="none">
+                <li><a href="/Register">Creá tu cuenta<i class="fa-regular fa-id-card"></i></a></li>
+                <li><a href="/Login">Ingresá<i class="fa-solid fa-right-from-bracket"></i></a></li>
+                <li><a href="">Mis compras<i class="fa-solid fa-basket-shopping"></i></a></li>
+
+            </ul>
+        </nav>
+
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
 
     </header>
 
-    <main class="mainhome">
+    <main class="main-form">
+        <form class="formulario" action="pagina_principal.html" method="post">
 
+            <div>
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div>
+                <label for="usuario">Nombre de usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+                <span id="error-usuario" class="error-usuario"></span>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+
+            <div><label for="domicilio">Domicilio:</label>
+                <input type="text" id="domicilio" name="domicilio" required>
+            </div>
+
+            <div><label for="perfil">Perfil de usuario:</label>
+                <select id="perfil" name="perfil">
+                    <option value="comprar">Comprar</option>
+                    <option value="vender">Vender</option>
+                </select>
+            </div>
+
+            <div>
+                <label> Categoria de interes:</label>
+            </div>
+
+            <div>
+                <label for="electro">Electro</label>
+                <input type="checkbox" id="electro" name="categorias[]" value="electro">
+
+                <label for="moda">Moda</label>
+                <input type="checkbox" id="moda" name="categorias[]" value="moda">
+
+                <label for="hogar">Hogar</label>
+                <input type="checkbox" id="hogar" name="categorias[]" value="hogar">
+
+                <label for="juguetería">Juguetería</label>
+                <input type="checkbox" id="Juguetería" name="categorias[]" value="Juguetería">
+
+                <label for="VidaSana">Vida sana</label>
+                <input type="checkbox" id="Vida sana" name="categorias[]" value="Vida sana">
+            </div>
+            <div>
+                <label for="foto">Foto de Usuario:</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </div>
+
+            <div>
+                <label for="contrasenia">Contraseña</label>
+                <input type="contrasenia" id="contrasenia" name="contrasenia" require>
+            </div>
+
+            <div>
+                <label for="confirmar_contrasenia">Confirma contraseña</label>
+                <input type="contrasenia" id="confirmar_contrasenia" name="confirmar_contrasenia" require>
+            </div>
+
+            <div>
+                <button type="submit">Enviar</button> <button type="button" class="delete"
+                    onclick="borrarFormulario()">Borrar Datos</button>
+            </div>
+
+        </form>
 
     </main>
+
+
+
+
 
     <footer class="body-footer">
 
@@ -149,12 +173,7 @@
 
         </section>
 
-        <div>
-
-
-            <p> Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-
-        </div>
+        <div>Copyright © 1999-2020 MercadoLiebre S.R.L.</div>
 
 
 

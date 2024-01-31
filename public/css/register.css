@@ -1,0 +1,113 @@
+@media screen and (max-width: 360px) {
+
+    .main-form{
+        background-color: var(--grisClaro);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 500px;
+        height: 100%;
+        margin: auto;
+    }
+    
+    .main-form .formulario {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .main-form .formulario div{
+        display: block;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        background-color: #fff;
+        margin-bottom: 50px;
+        color: var(--grisOscuro);
+    }
+    
+    .main-form .formulario div label{text-align: justify;}
+    
+    .main-form .formulario div input{
+        border: none;
+        width: 266px;
+        text-align: justify;
+        font-size: 19px;
+        color: var(--grisOscuro);
+    }
+
+}
+@media screen and (min-width: 361px) {
+
+    .main-form{
+        background-color: var(--grisClaro);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 500px;
+        height: 100%;
+        margin: auto;
+    }
+    
+    .main-form .formulario {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .main-form .formulario div{
+        display: block;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        background-color: #fff;
+        margin-bottom: 50px;
+        color: var(--grisOscuro);
+    }
+    
+    .main-form .formulario div label{text-align: justify;}
+    
+    .main-form .formulario div input{
+        border: none;
+        width: 266px;
+        text-align: justify;
+        font-size: 19px;
+        color: var(--grisOscuro);
+    }
+
+}
+@media screen and (min-width: 769px) {
+
+.main-form{
+    background-color: var(--grisClaro);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 100%;
+    margin: auto;
+}
+
+.main-form .formulario {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.main-form .formulario div{
+    display: block;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    color: var(--grisOscuro);
+}
+
+.main-form .formulario div label{text-align: justify;}
+
+.main-form .formulario div input{
+    border: none;
+    width: 266px;
+    text-align: justify;
+    font-size: 19px;
+    color: var(--grisOscuro);
+}
+}
